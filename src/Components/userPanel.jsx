@@ -12,12 +12,14 @@ const UserPanel = () => {
 
     return(
         <Fragment>
-            <button className="CloseOpen">show Panel</button>
-            <div className="Panel">
-                <div>
-                    <img className="Userprofile" src={userProfile} alt={`user profile`} />
+            <button onClick={handlePanel} className="CloseOpen">show Panel</button>
+            { show ?
+                <div className="Panel">
+                    <div>
+                        <img className="Userprofile" src={userProfile} alt={`user profile`} />
+                    </div>
                 </div>
-            </div>
+            : null }
         </Fragment>
     );
 }
