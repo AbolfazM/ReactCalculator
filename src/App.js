@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import UserPanel from './Components/userPanel';
 import './index.css';
 
 const App = () => {
@@ -51,7 +52,7 @@ const App = () => {
 	return(
 		<div className="App">
 			<div className="calculator">
-
+				<UserPanel />
 				<div className="display">
 					{ result ? <span>({result})</span> : ''} &nbsp;
 					{ calc || "0" }
@@ -75,6 +76,7 @@ const App = () => {
 					<button onClick={calculate}>=</button>
 				</div>
 			</div>
+
 		</div>
 	);
 }
