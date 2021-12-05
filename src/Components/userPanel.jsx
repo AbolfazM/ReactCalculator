@@ -1,15 +1,24 @@
-import React from 'react';
+import React, { Fragment, useState } from 'react';
 import userProfile from './userprofile.png';
 import './styles.css';
 
 const UserPanel = () => {
+
+    const [show, setShow] = useState(false);
+
+    const handlePanel = () => {
+        setShow(!show);
+    }
+
     return(
-        <div className="Panel">
-            <div>
-                <span className="CloseOpen">X</span>
-                <img className="Userprofile" src={userProfile} alt={`user profile`} />
+        <Fragment>
+            <button className="CloseOpen">show Panel</button>
+            <div className="Panel">
+                <div>
+                    <img className="Userprofile" src={userProfile} alt={`user profile`} />
+                </div>
             </div>
-        </div>
+        </Fragment>
     );
 }
 
