@@ -2,7 +2,7 @@
 
 :root {
     --dark: #131a26;
-    --primary: #dd2764;
+    --primary: #d81e5b;
 }
 
 
@@ -26,5 +26,15 @@
     margin: 30px 80px;
     display: block;
     border: 6px solid var(--primary);
+    cursor: pointer;
+}
+
+
+/* close open of panel */
+
+.CloseOpen {
+    color: var(--primary);
+    margin: 15% 5%;
+    font-size: 25px;
     cursor: pointer;
 }
