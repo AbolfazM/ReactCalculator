@@ -6,7 +6,7 @@ const UserPanel = () => {
     return(
         <div className="Panel">
             <div>
-                <img src={userProfile} alt={`user profile`} />
+                <img className="Userprofile" src={userProfile} alt={`user profile`} />
             </div>
         </div>
     );
