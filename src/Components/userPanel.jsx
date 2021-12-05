@@ -13,7 +13,7 @@ const UserPanel = () => {
 
     return(
         <Fragment>
-            <button onClick={handlePanel} className="CloseOpen">show Panel</button>
+            <button onClick={handlePanel} className="CloseOpen">Click!</button>
             { show ?
                 <div className="Panel">
                     <div>

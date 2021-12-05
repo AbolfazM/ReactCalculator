@@ -48,6 +48,12 @@
     box-shadow: 0px 2px 64px rgba(218, 26, 90, 0.4);
 }
 
+@media (max-width:420px) {
+    .CloseOpen {
+        right: 70%;
+    }
+}
+
 
 /* items (Items.jsx) */
 
